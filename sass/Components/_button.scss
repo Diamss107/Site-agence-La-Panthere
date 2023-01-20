@@ -1,0 +1,13 @@
+.button {
+	padding: 12px 28px;
+	background-color: $primary;
+	border: 0.667px solid $primary;
+	border-radius: 40px;
+	color: white;
+	text-decoration: none;
+	transition: all 300ms ease-in-out;
+
+	&:hover {
+		background-color: $primary-hover
+	}
+}
