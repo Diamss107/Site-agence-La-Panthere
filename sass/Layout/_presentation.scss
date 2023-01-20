@@ -1,0 +1,15 @@
+.presentation {
+	margin: 70px 20px;
+	&__title {
+		display: block;
+		color: $secondary-text-color;
+		font-size: 22px;
+		font-weight: 400;
+		text-align: center;
+		margin: auto 140px;
+	}
+	&__desc {
+		display: flex;
+		margin: 0 85px;
+	}
+}
