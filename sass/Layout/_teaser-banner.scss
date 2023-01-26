@@ -4,11 +4,15 @@
 	justify-content: center;
 	@include banner(
 		0,
-		0,
 		url('../../img/image-de-presentation.avif'),
 		url('../../img/texture-paper.png')
 	);
 	height: 560px;
+
+	&::before {
+		clear: both;
+		background-size: cover;
+	}
 
 	&__text {
 		position: relative;
