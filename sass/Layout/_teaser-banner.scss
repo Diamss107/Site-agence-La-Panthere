@@ -4,6 +4,7 @@
 	justify-content: center;
 	@include banner(
 		0,
+		0,
 		url('../../img/image-de-presentation.avif'),
 		url('../../img/texture-paper.png')
 	);

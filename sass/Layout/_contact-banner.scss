@@ -1,6 +1,7 @@
 .contact-banner {
 	@include banner(
 		0,
+		0,
 		url(../../img/agence-la-panthere.avif),
 		url('../../img/texture-paper.png')
 	);

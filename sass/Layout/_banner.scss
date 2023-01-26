@@ -1,6 +1,7 @@
 .banner {
 	@include banner(
-		0 -5px,
+		0,
+		-5px,
 		url('../../img/agence-la-panthere.avif'),
 		url('../../img/texture-paper.png')
 	);

@@ -1,4 +1,4 @@
-@mixin banner($position, $img, $texture) {
+@mixin banner($positionX, $positionY, $img, $texture) {
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -17,7 +17,6 @@
 		background-attachment: fixed;
 		width: 100%;
 		height: 100%;
-		background-size: 2;
-		background-position: $position;
+		background-position: $positionX, $positionY;
 	}
 }
