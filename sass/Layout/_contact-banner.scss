@@ -1,0 +1,24 @@
+.contact-banner {
+	@include banner(
+		0,
+		url(../../img/agence-la-panthere.avif),
+		url('../../img/texture-paper.png')
+	);
+	height: 365px;
+	text-align: center;
+
+	&::before {
+		background-attachment: scroll;
+		background-size: 100%;
+	}
+
+	&__text {
+		z-index: -1;
+		margin-bottom: 30px;
+		&__title {
+			color: $primary;
+			font-size: 1.38em;
+			font-weight: 400;
+		}
+	}
+}
