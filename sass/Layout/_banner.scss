@@ -1,10 +1,10 @@
 .banner {
 	@include banner(
-		0 800px,
+		0 -5px,
 		url('../../img/agence-la-panthere.avif'),
 		url('../../img/texture-paper.png')
 	);
-	height: 450px;
+	height: 440px;
 
 	&__title {
 		color: $primary;

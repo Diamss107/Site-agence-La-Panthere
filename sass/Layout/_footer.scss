@@ -1,0 +1,30 @@
+.footer {
+	display: flex;
+	flex-direction: column;
+	padding: 20px 0;
+	background-color: $primary;
+	color: white;
+	height: 60px;
+	text-align: center;
+
+	&__desc {
+		margin-bottom: 10px;
+		font-size: 0.7em;
+		font-weight: 400;
+	}
+
+	&__social-links {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&__link {
+			&__icon {
+				margin: 0 35px;
+				color: white;
+				opacity: 0.6;
+				font-size: 30px;
+			}
+		}
+	}
+}
