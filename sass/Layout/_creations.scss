@@ -1,0 +1,22 @@
+.creations {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-image: url(../../img/lines-h2-bg.png);
+	padding: 100px 0;
+
+	&__title {
+		color: $secondary-text-color;
+		font-size: 1.38em;
+		margin-bottom: 25px;
+		font-weight: 400;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		max-width: 700px;
+	}
+}

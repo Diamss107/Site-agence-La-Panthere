@@ -1,0 +1,26 @@
+.creation {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 300px;
+	height: 388px;
+	text-align: center;
+	margin: 25px 0;
+
+	&__img {
+		width: 270px;
+		height: 270px;
+		object-fit: cover;
+	}
+
+	&__title {
+		color: $text-color;
+		font-weight: 700;
+		font-size: 0.95em;
+	}
+
+	&__desc {
+		font-size: 0.69em;
+		color: $secondary-text-color;
+	}
+}
