@@ -1,0 +1,40 @@
+.teaser-banner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	@include banner(
+		0,
+		url('../../img/image-de-presentation.avif'),
+		url('../../img/texture-paper.png')
+	);
+	height: 560px;
+
+	&__text {
+		position: relative;
+		width: 520px;
+		height: 280px;
+		padding: 40px 40px;
+		text-align: center;
+		background-image: url(../../img/texture-paper.png);
+		background-color: $primary-text-background;
+		background-size: 280px 280px;
+
+		&__title {
+			color: $primary;
+			font-weight: normal;
+			font-size: 1.38em;
+			line-height: 1.4em;
+		}
+
+		&__desc {
+			color: white;
+			font-size: 0.7em;
+		}
+
+		&__link {
+			color: white;
+			font-size: 0.7em;
+			font-weight: 900;
+		}
+	}
+}

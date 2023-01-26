@@ -1,0 +1,23 @@
+@mixin banner($position, $img, $texture) {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-image: $texture;
+	background-attachment: fixed;
+	background-size: 280px 280px;
+	width: 100%;
+
+	&::before {
+		content: '';
+		background-image: $img;
+		position: absolute;
+		z-index: -1;
+		background-attachment: fixed;
+		width: 100%;
+		height: 100%;
+		background-size: 2;
+		background-position: $position;
+	}
+}
