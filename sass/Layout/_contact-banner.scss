@@ -1,8 +1,8 @@
 .contact-banner {
 	@include banner(
 		-200px,
-		url(../../img/agence-la-panthere.avif),
-		url('../../img/texture-paper.png')
+		url(../../img/agence-la-panthere.webp),
+		url('../../img/texture-paper.webp')
 	);
 	height: 365px;
 	text-align: center;

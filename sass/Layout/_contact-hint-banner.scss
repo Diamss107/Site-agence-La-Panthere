@@ -1,5 +1,5 @@
 .contact-hint-banner {
-	@include banner(0, url(), url('../../img/texture-paper.png'));
+	@include banner(0, url(), url('../../img/texture-paper.webp'));
 	background-color: $primary;
 	height: 303px;
 	color: $primary;

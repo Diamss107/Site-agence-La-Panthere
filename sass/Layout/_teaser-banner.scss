@@ -4,8 +4,8 @@
 	justify-content: center;
 	@include banner(
 		0,
-		url('../../img/image-de-presentation.avif'),
-		url('../../img/texture-paper.png')
+		url('../../img/image-de-presentation.webp'),
+		url('../../img/texture-paper.webp')
 	);
 	height: 560px;
 
@@ -20,7 +20,7 @@
 		height: 280px;
 		padding: 40px 40px;
 		text-align: center;
-		background-image: url(../../img/texture-paper.png);
+		background-image: url(../../img/texture-paper.webp);
 		background-color: $primary-text-background;
 		background-size: 280px 280px;
 

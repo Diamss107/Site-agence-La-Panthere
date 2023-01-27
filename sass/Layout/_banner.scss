@@ -1,8 +1,8 @@
 .banner {
 	@include banner(
 		-5px,
-		url('../../img/agence-la-panthere.avif'),
-		url('../../img/texture-paper.png')
+		url('../../img/agence-la-panthere.webp'),
+		url('../../img/texture-paper.webp')
 	);
 	height: 440px;
 
