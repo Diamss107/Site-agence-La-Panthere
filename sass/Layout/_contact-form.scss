@@ -1,0 +1,18 @@
+.contact-form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 100px 0;
+
+	&__form {
+		width: 485px;
+	}
+
+	&__infos {
+		align-self: flex-start;
+		margin-left: 30px;
+		font-size: 0.69em;
+		color: $secondary-text-color;
+		line-height: 16px;
+	}
+}

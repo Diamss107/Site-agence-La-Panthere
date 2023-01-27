@@ -1,0 +1,19 @@
+.contact-hint-banner {
+	@include banner(0, url(), url('../../img/texture-paper.png'));
+	background-color: $primary;
+	height: 303px;
+	color: $primary;
+	text-align: center;
+	&__text {
+		&__title {
+			font-weight: 400;
+			font-size: 2.38em;
+			margin-bottom: 10px;
+		}
+
+		&__desc {
+			font-weight: 400;
+			font-size: 0.7em;
+		}
+	}
+}

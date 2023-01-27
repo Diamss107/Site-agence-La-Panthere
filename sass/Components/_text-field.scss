@@ -1,0 +1,34 @@
+.text-field {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-bottom: 15px;
+
+	&__label {
+		margin-bottom: 5px;
+		color: $secondary-text-color;
+		font-size: 0.89em;
+		font-weight: 400;
+	}
+
+	textarea.text-field__input {
+		height: 80px;
+	}
+
+	&__input {
+		height: 20px;
+		color: #555;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		border-radius: 4px;
+		transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+		font-size: 0.88em;
+		padding: 6px 12px;
+
+		&:focus {
+			border-color: #66afe9;
+			outline: 0;
+			box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%),
+				0 0 8px rgb(102 175 233 / 60%);
+		}
+	}
+}
