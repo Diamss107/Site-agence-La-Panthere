@@ -7,9 +7,13 @@
 
 	&__icon {
 		display: block;
+		font-size: 60px;
 		width: 80px;
 		height: 60px;
-		background-color: rgba($color: black, $alpha: 0.6);
+
+		color: #364577;
+		border-color: #364577;
+		text-shadow: 0 1px 2px rgb(0 0 0 / 30%);
 	}
 
 	&__title {
