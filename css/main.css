@@ -6,17 +6,19 @@ body {
 
 .button {
   padding: 12px 28px;
-  background-color: rgb(243, 151, 108);
-  border: 0.667px solid rgb(243, 151, 108);
+  background-color: #97380c;
+  border: 0.667px solid #97380c;
   border-radius: 40px;
   color: white;
   text-decoration: none;
   transition: all 300ms ease-in-out;
   text-shadow: 0 1px 0 rgba(0, 0, 1, 0.1);
   box-shadow: 0 1px 3px rgba(0, 0, 1, 0.25), inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+  font-weight: 700;
+  font-size: 1em;
 }
 .button:hover {
-  background-color: #c27956;
+  background-color: #af410e;
   cursor: pointer;
 }
 
@@ -26,7 +28,6 @@ input[type=submit].button {
   border: none;
   box-shadow: none;
   height: 47px;
-  font-weight: 700;
   font-size: 1em;
 }
 
@@ -135,22 +136,83 @@ input[type=submit].button {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  margin: auto;
+  padding-bottom: 0;
+  margin: 0 auto;
   max-width: 1000px;
+  width: 100%;
+}
+.header__checkbox {
+  display: none;
+}
+.header__header-mobile__icon {
+  display: none;
 }
 .header__nav {
+  display: flex;
   width: 180px;
 }
 .header__nav__links {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+  margin: 0;
 }
 .header__nav__links__link__a {
   color: rgb(87, 87, 87);
   text-decoration: none;
 }
 
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 20px 0 0 0;
+  }
+  .header__checkbox:checked + .header__header-mobile + .header__nav {
+    height: 80px;
+  }
+  .header__header-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+  }
+  .header__header-mobile__icon {
+    display: block;
+    font-size: 1.5em;
+    color: rgb(87, 87, 87);
+  }
+  .header__nav {
+    position: relative;
+    display: flex;
+    height: 0px;
+    width: 100%;
+    overflow: hidden;
+    transition: all 300ms ease-out;
+  }
+  .header__nav__links {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+  }
+  .header__nav__links__link {
+    position: relative;
+    display: block;
+    height: 49%;
+  }
+  .header__nav__links__link__a {
+    height: 20px;
+    display: block;
+    border-top: 1px solid rgb(228, 228, 228);
+    border-bottom: 1px solid rgb(228, 228, 228);
+    padding: 10px 15px;
+    background-color: rgb(242, 242, 242);
+    color: rgb(87, 87, 87);
+  }
+}
 .presentation {
   display: flex;
   flex-direction: column;
@@ -170,6 +232,12 @@ input[type=submit].button {
   margin: 0 85px;
 }
 
+@media screen and (max-width: 768px) {
+  .presentation__desc {
+    flex-direction: column;
+    margin: 0;
+  }
+}
 .banner {
   position: relative;
   display: flex;
@@ -180,6 +248,7 @@ input[type=submit].button {
   background-size: 280px 280px;
   width: 100%;
   height: 440px;
+  margin-top: 20px;
 }
 .banner::before {
   content: "";
@@ -194,11 +263,16 @@ input[type=submit].button {
   background-position: center -5px;
 }
 .banner__title {
-  color: rgb(243, 151, 108);
+  color: #97380c;
   font-size: 32px;
   font-weight: 400;
 }
 
+@media screen and (max-width: 768px) {
+  .banner {
+    height: 320px;
+  }
+}
 .teaser-banner {
   display: flex;
   align-items: center;
@@ -230,17 +304,21 @@ input[type=submit].button {
   background-size: cover;
 }
 .teaser-banner__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
   width: 520px;
   height: 280px;
-  padding: 40px 40px;
+  padding: 40px;
   text-align: center;
   background-image: url(../../img/texture-paper.webp);
-  background-color: rgba(165, 147, 99, 0.7);
+  background-color: #7f2f0a;
   background-size: 280px 280px;
 }
 .teaser-banner__text__title {
-  color: rgb(243, 151, 108);
+  color: #97380c;
   font-weight: normal;
   font-size: 1.38em;
   line-height: 1.4em;
@@ -255,6 +333,13 @@ input[type=submit].button {
   font-weight: 900;
 }
 
+@media screen and (max-width: 600px) {
+  .teaser-banner__text {
+    padding: 5%;
+    width: 90%;
+    height: 70%;
+  }
+}
 .contact-banner {
   position: relative;
   display: flex;
@@ -277,22 +362,28 @@ input[type=submit].button {
   background-attachment: fixed;
   width: 100%;
   height: 100%;
-  background-position: center -200px;
+  background-position: center 0;
 }
 .contact-banner::before {
   background-attachment: scroll;
-  background-size: 100%;
+  background-size: cover;
+  clear: both;
 }
 .contact-banner__text {
   z-index: -1;
   margin-bottom: 30px;
 }
 .contact-banner__text__title {
-  color: rgb(243, 151, 108);
+  color: #97380c;
   font-size: 1.38em;
   font-weight: 400;
 }
 
+@media screen and (max-width: 768px) {
+  .contact-banner {
+    height: 245px;
+  }
+}
 .contact-hint-banner {
   position: relative;
   display: flex;
@@ -302,9 +393,9 @@ input[type=submit].button {
   background-image: url("../../img/texture-paper.webp");
   background-size: 280px 280px;
   width: 100%;
-  background-color: rgb(243, 151, 108);
+  background-color: #97380c;
   height: 303px;
-  color: rgb(243, 151, 108);
+  color: #97380c;
   text-align: center;
 }
 .contact-hint-banner::before {
@@ -350,6 +441,11 @@ input[type=submit].button {
   max-width: 700px;
 }
 
+@media screen and (max-width: 768px) {
+  .creations__list {
+    flex-direction: column;
+  }
+}
 .contact-form {
   display: flex;
   align-items: center;
@@ -371,7 +467,7 @@ input[type=submit].button {
   display: flex;
   flex-direction: column;
   padding: 20px 0;
-  background-color: rgb(243, 151, 108);
+  background-color: #97380c;
   color: white;
   height: 60px;
   text-align: center;

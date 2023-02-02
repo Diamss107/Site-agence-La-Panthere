@@ -5,10 +5,17 @@
 		url('../../img/texture-paper.webp')
 	);
 	height: 440px;
+	margin-top: 20px;
 
 	&__title {
 		color: $primary;
 		font-size: 32px;
 		font-weight: 400;
+	}
+}
+
+@include for-tablet-and-mobile {
+	.banner {
+		height: 320px;
 	}
 }

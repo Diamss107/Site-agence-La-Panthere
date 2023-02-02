@@ -8,6 +8,8 @@
 	transition: all 300ms ease-in-out;
 	text-shadow: 0 1px 0 rgb(0 0 1 / 10%);
 	box-shadow: 0 1px 3px rgb(0 0 1 / 25%), inset 0 1px 0 0 rgb(255 255 255 / 15%);
+	font-weight: 700;
+	font-size: 1em;
 
 	&:hover {
 		background-color: $primary-hover;
@@ -21,6 +23,5 @@ input[type='submit'].button {
 	border: none;
 	box-shadow: none;
 	height: 47px;
-	font-weight: 700;
 	font-size: 1em;
 }

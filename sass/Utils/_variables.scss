@@ -1,5 +1,5 @@
-$primary: rgb(243, 151, 108);
-$primary-hover: #c27956;
-$primary-text-background: rgba(165, 147, 99, 0.7);
+$primary: #97380c;
+$primary-hover: lighten($primary, 5%);
+$primary-text-background: darken($primary, 5%);
 $text-color: rgb(51, 51, 51);
 $secondary-text-color: rgb(87, 87, 87);

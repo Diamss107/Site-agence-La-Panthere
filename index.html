@@ -16,24 +16,30 @@
 
 	<title>La Panthère - Agence de web design</title>
 
+
 	<link rel="shortcut icon" type="image/png" href="favicon.jpg">
+
+	<script src="https://kit.fontawesome.com/4db20b3dcb.js" crossorigin="anonymous"></script>
 
 	<link rel="stylesheet" href="./css/et-line.css">
 	<link rel="stylesheet" href="./css/main.css">
 
-	<script src="https://kit.fontawesome.com/4db20b3dcb.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 	<header class="header">
-		<a href="./index.html" class="header__nav__links__link__a">
-			<img src="./img/agence-la-panthere-monochrome.webp" alt="Logo de La Panthère, agence de web design"
-				width="217" height="40" class="header__logo">
-		</a>
+		<input type="checkbox" name="Navigation" id="nav" class="header__checkbox">
+		<div class="header__header-mobile">
+			<a href="./index.html" class="header__header-mobile__logo-link">
+				<img src="./img/agence-la-panthere-monochrome.svg" alt="Logo de La Panthère, agence de web design"
+					width="217" height="40" class="header__header-mobile__logo-link__logo">
+			</a>
+			<label for="nav"><i class="fa-solid fa-bars header__header-mobile__icon"></i></label>
+		</div>
 		<nav class="header__nav">
 			<ul class="header__nav__links">
 				<li class="header__nav__links__link">
-					<a href="./index.html" class="header__nav__links__link__a">Acceuil</a>
+					<a href="./index.html" class="header__nav__links__link__a">Accueil</a>
 				</li>
 				<li class="header__nav__links__link">
 					<a href="./contact.html" class="header__nav__links__link__a">Contact &gt;</a>
@@ -107,7 +113,7 @@
 			</div>
 		</section>
 		<section class="creations">
-			<h2 class="creations__title"> Nous travaillons avec beacoup de clients, voici nos réalisations.</h2>
+			<h2 class="creations__title">Nous travaillons avec beacoup de clients, voici nos réalisations.</h2>
 			<div class="creations__list">
 				<div class="creation">
 					<img src="./img/1.webp" alt="" class="creation__img" width="270" height="270">
@@ -151,16 +157,16 @@
 	<footer class="footer">
 		<span class="footer__desc">Agence La Panthère - Agence web basée à Lyon.</span>
 		<div class="footer__social-links">
-			<a class="social" href="index.html" class="footer__social-links__link">
+			<a class="social" href="index.html" class="footer__social-links__link" title="twitter">
 				<span class="fa fa-twitter icon-md footer__social-links__link__icon"></span>
 			</a>
-			<a class="social" href="index.html" class="footer__social-links__link">
+			<a class="social" href="index.html" class="footer__social-links__link" title="facebook">
 				<span class="fa fa-facebook icon-md footer__social-links__link__icon"></span>
 			</a>
-			<a class="social" href="index.html" class="footer__social-links__link">
+			<a class="social" href="index.html" class="footer__social-links__link" title="dribble">
 				<span class="fa fa-dribbble icon-md footer__social-links__link__icon"></span>
 			</a>
-			<a class="social" href="index.html" class="footer__social-links__link">
+			<a class="social" href="index.html" class="footer__social-links__link" title="instagram">
 				<span class="fa fa-instagram icon-md footer__social-links__link__icon"></span>
 			</a>
 		</div>

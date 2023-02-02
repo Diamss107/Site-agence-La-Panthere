@@ -1,6 +1,6 @@
 .contact-banner {
 	@include banner(
-		-200px,
+		0,
 		url(../../img/agence-la-panthere.webp),
 		url('../../img/texture-paper.webp')
 	);
@@ -9,7 +9,8 @@
 
 	&::before {
 		background-attachment: scroll;
-		background-size: 100%;
+		background-size: cover;
+		clear: both;
 	}
 
 	&__text {
@@ -20,5 +21,11 @@
 			font-size: 1.38em;
 			font-weight: 400;
 		}
+	}
+}
+
+@include for-tablet-and-mobile {
+	.contact-banner {
+		height: 245px;
 	}
 }

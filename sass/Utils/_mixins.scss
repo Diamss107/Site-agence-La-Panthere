@@ -21,3 +21,15 @@
 		background-position: center $positionY;
 	}
 }
+
+@mixin for-tablet-and-mobile {
+	@media screen and (max-width: 768px) {
+		@content;
+	}
+}
+
+@mixin for-teaset-banner {
+	@media screen and (max-width: 600px) {
+		@content;
+	}
+}

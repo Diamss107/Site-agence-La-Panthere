@@ -15,10 +15,14 @@
 	}
 
 	&__text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 		position: relative;
 		width: 520px;
 		height: 280px;
-		padding: 40px 40px;
+		padding: 40px;
 		text-align: center;
 		background-image: url(../../img/texture-paper.webp);
 		background-color: $primary-text-background;
@@ -40,6 +44,16 @@
 			color: white;
 			font-size: 0.7em;
 			font-weight: 900;
+		}
+	}
+}
+
+@include for-teaset-banner {
+	.teaser-banner {
+		&__text {
+			padding: 5%;
+			width: 90%;
+			height: 70%;
 		}
 	}
 }
