@@ -49,12 +49,12 @@ input[type=submit].button {
 }
 .infos__title {
   color: rgb(51, 51, 51);
-  font-size: 15px;
+  font-size: 1.1em;
   font-weight: 700;
 }
 .infos__text {
   color: rgb(87, 87, 87);
-  font-size: 11px;
+  font-size: 0.9em;
   font-weight: 400;
 }
 
@@ -98,7 +98,7 @@ input[type=submit].button {
   font-size: 0.95em;
 }
 .creation__desc {
-  font-size: 0.69em;
+  font-size: 0.8em;
   color: rgb(87, 87, 87);
 }
 
@@ -327,7 +327,7 @@ input[type=submit].button {
 }
 .teaser-banner__text__desc {
   color: white;
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 .teaser-banner__text__link {
   color: white;
