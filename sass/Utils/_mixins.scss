@@ -22,6 +22,20 @@
 	}
 }
 
+@mixin modal-icon {
+	color: white;
+	background-color: rgba($color: black, $alpha: 0.5);
+	padding: 6px 10px;
+	font-size: 1.3em;
+	opacity: 0.3;
+	transition: all 400ms ease-out;
+
+	&:hover {
+		opacity: 1;
+		cursor: pointer;
+	}
+}
+
 @mixin for-tablet-and-mobile {
 	@media screen and (max-width: 768px) {
 		@content;

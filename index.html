@@ -12,16 +12,16 @@
 		n’hésitez pas à nous contacter. Nous travaillerons ensemble pour créer des sites beau et bien structurés,
 		qui seront facilement trouvable sur les moteurs de recherche.">
 	<meta name="keywords"
-		content="La Panthère, agence web, agence web lyon, web design, stratégie web, agence web design">
+		content="La Panthère, agence web, agence web lyon, web design, stratégie web, agence web design lyon">
 
 	<title>La Panthère - Agence de web design</title>
 
 
 	<link rel="shortcut icon" type="image/png" href="favicon.jpg">
 
-	<script src="https://kit.fontawesome.com/4db20b3dcb.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/4db20b3dcb.js" crossorigin="anonymous" defer></script>
 
-	<link rel="stylesheet" href="./css/et-line.css">
+	<link rel="stylesheet" href="./css/et-line.css" defer>
 	<link rel="stylesheet" href="./css/main.css">
 
 </head>
@@ -34,7 +34,8 @@
 				<img src="./img/agence-la-panthere-monochrome.svg" alt="Logo de La Panthère, agence de web design"
 					width="217" height="40" class="header__header-mobile__logo-link__logo">
 			</a>
-			<label for="nav"><i class="fa-solid fa-bars header__header-mobile__icon"></i></label>
+			<label for="nav" title="Ouvrir le menu de navigation"><i
+					class="fa-solid fa-bars header__header-mobile__icon"></i></label>
 		</div>
 		<nav class="header__nav">
 			<ul class="header__nav__links">
@@ -115,32 +116,132 @@
 		<section class="creations">
 			<h2 class="creations__title">Nous travaillons avec beacoup de clients, voici nos réalisations.</h2>
 			<div class="creations__list">
+				<input type="radio" name="BiggerImage" id="close" class="creation__isBigger">
 				<div class="creation">
-					<img src="./img/1.webp" alt="" class="creation__img" width="270" height="270">
+					<label for="1bi" class="creation__img-wrapper">
+						<img src="./img/1.webp" alt="Plusieurs journaux" class="creation__img-wrapper__img" width="270"
+							height="270">
+						<i class="fa-solid fa-plus creation__img-wrapper__icon"></i>
+					</label>
 					<h3 class="creation__title">REFONTE D'UN SITE WEB POUR UN JOURNAL LOCAL</h3>
-					<p class="creation__desc">Nous avons créé une nouvelle identité visuelle pour un journal lyonnais.
+					<p class="creation__desc">
+						Nous avons créé une nouvelle identité visuelle pour un journal lyonnais.
 					</p>
+					<input type="radio" name="BiggerImage" id="1bi" class="creation__isBigger">
+					<div class="creation__bigger">
+						<div class="creation__bigger__wrapper">
+							<label for="close" class="creation__bigger__wrapper__label">
+								<i class="fa-solid fa-xmark creation__bigger__wrapper__label__icon"></i>
+							</label>
+							<div class="creation__bigger__wrapper__main">
+								<label for="#">
+									<i class="fa-solid fa-angle-left creation__bigger__wrapper__main__disable"></i>
+								</label>
+								<img src="./img/1-bigger.webp" alt="Plusieurs journaux"
+									class="creation__bigger__wrapper__main__img" width="628" height="628">
+								<label for="2bi">
+									<i class="fa-solid fa-angle-right creation__bigger__wrapper__main__right"></i>
+								</label>
+							</div>
+							<span class="creation__bigger__wrapper__desc">Refonte d'un site web pour un journal
+								local</span>
+						</div>
+					</div>
 				</div>
 				<div class="creation">
-					<img src="./img/2.webp" alt="" class="creation__img" width="270" height="270">
+					<label for="2bi" class="creation__img-wrapper">
+						<img src="./img/2.webp" alt="Photographe prenant une photo" class="creation__img-wrapper__img"
+							width="270" height="270">
+						<i class="fa-solid fa-plus creation__img-wrapper__icon"></i>
+					</label>
 					<h3 class="creation__title">CRÉATION D'UN SITE WEB POUR PHOTOGRAPHES</h3>
 					<p class="creation__desc">Nous avons conçu la plateforme idéale pour laisser place aux clichés des
 						photographes.
 					</p>
+					<input type="radio" name="BiggerImage" id="2bi" class="creation__isBigger">
+					<div class="creation__bigger">
+						<div class="creation__bigger__wrapper">
+							<label for="close" class="creation__bigger__wrapper__label">
+								<i class="fa-solid fa-xmark creation__bigger__wrapper__label__icon"></i>
+							</label>
+							<div class="creation__bigger__wrapper__main">
+								<label for="1bi">
+									<i class="fa-solid fa-angle-left creation__bigger__wrapper__main__left"></i>
+								</label>
+								<img src="./img/2-bigger.webp" alt="Photographe prenant une photo"
+									class="creation__bigger__wrapper__main__img" width="628" height="628">
+								<label for="3bi">
+									<i class="fa-solid fa-angle-right creation__bigger__wrapper__main__right"></i>
+								</label>
+							</div>
+							<span class="creation__bigger__wrapper__desc">Création d'un site web pour
+								photographes</span>
+						</div>
+					</div>
 				</div>
 				<div class="creation">
-					<img src="./img/3.webp" alt="" class="creation__img" width="270" height="270">
+					<label for="3bi" class="creation__img-wrapper">
+						<img src="./img/3.webp" alt="Plusieurs appareils électroniques disposés sur une table"
+							class="creation__img-wrapper__img" width="270" height="270">
+						<i class="fa-solid fa-plus creation__img-wrapper__icon"></i>
+					</label>
 					<h3 class="creation__title">CRÉATION D'UN SITE INTERNET POUR UN VOYAGEUR</h3>
-					<p class="creation__desc">Nous avons élaboré un site internet et des illustrations pour sublimer les
+					<p class="creation__desc">Nous avons élaboré un site internet et des illustrations pour sublimer
+						les
 						vidéos et les articles de ce voyageur.
 					</p>
+					<input type="radio" name="BiggerImage" id="3bi" class="creation__isBigger">
+					<div class="creation__bigger">
+						<div class="creation__bigger__wrapper">
+							<label for="close" class="creation__bigger__wrapper__label">
+								<i class="fa-solid fa-xmark creation__bigger__wrapper__label__icon"></i>
+							</label>
+							<div class="creation__bigger__wrapper__main">
+								<label for="2bi">
+									<i class="fa-solid fa-angle-left creation__bigger__wrapper__main__left"></i>
+								</label>
+								<img src="./img/3-bigger.webp"
+									alt="Plusieurs appareils électroniques disposés sur une table"
+									class="creation__bigger__wrapper__main__img" width="320" height="320">
+								<label for="4bi">
+									<i class="fa-solid fa-angle-right creation__bigger__wrapper__main__right"></i>
+								</label>
+							</div>
+							<span class="creation__bigger__wrapper__desc">Création d'un site internet pour un
+								voyageur</span>
+						</div>
+					</div>
 				</div>
 				<div class="creation">
-					<img src="./img/4.webp" alt="" class="creation__img" width="270" height="270">
+					<label for="4bi" class="creation__img-wrapper">
+						<img src="./img/4.webp" alt="Personnes préparants un mariage" class="creation__img-wrapper__img"
+							width="270" height="270">
+						<i class="fa-solid fa-plus creation__img-wrapper__icon"></i>
+					</label>
 					<h3 class="creation__title">CONCEPTION D'UN SITE POUR UNE AGENCE DE MARIAGE</h3>
 					<p class="creation__desc">Nous avons travaillé avec cette agence pour créer un site internet
 						permettant la présentation détaillée de leurs prestations.
 					</p>
+					<input type="radio" name="BiggerImage" id="4bi" class="creation__isBigger">
+					<div class="creation__bigger">
+						<div class="creation__bigger__wrapper">
+							<label for="close" class="creation__bigger__wrapper__label">
+								<i class="fa-solid fa-xmark creation__bigger__wrapper__label__icon"></i>
+							</label>
+							<div class="creation__bigger__wrapper__main">
+								<label for="3bi">
+									<i class="fa-solid fa-angle-left creation__bigger__wrapper__main__left"></i>
+								</label>
+								<img src="./img/4-bigger.webp" alt="Personnes préparants un mariage"
+									class="creation__bigger__wrapper__main__img" width="320" height="320">
+								<label for="#">
+									<i class="fa-solid fa-angle-right creation__bigger__wrapper__main__disable"></i>
+								</label>
+							</div>
+							<span class="creation__bigger__wrapper__desc">Conception d'un site pour une agence de
+								mariage</span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
