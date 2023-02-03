@@ -64,13 +64,14 @@ input[type=submit].button {
   font-size: 18px;
   margin: 0 166px;
   margin-top: 80px;
+  margin: 0;
 }
 .citation__content {
   font-style: italic;
 }
 .citation__caption {
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.75);
 }
 .citation__caption__cite {
   font-style: normal;
@@ -152,6 +153,7 @@ input[type=submit].button {
   width: 180px;
 }
 .header__nav__links {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   list-style-type: none;
@@ -263,7 +265,7 @@ input[type=submit].button {
   background-position: center -5px;
 }
 .banner__title {
-  color: #97380c;
+  color: white;
   font-size: 32px;
   font-weight: 400;
 }
@@ -314,11 +316,11 @@ input[type=submit].button {
   padding: 40px;
   text-align: center;
   background-image: url(../../img/texture-paper.webp);
-  background-color: #7f2f0a;
+  background-color: rgba(0, 0, 0, 0.5);
   background-size: 280px 280px;
 }
 .teaser-banner__text__title {
-  color: #97380c;
+  color: #f39063;
   font-weight: normal;
   font-size: 1.38em;
   line-height: 1.4em;
@@ -374,7 +376,8 @@ input[type=submit].button {
   margin-bottom: 30px;
 }
 .contact-banner__text__title {
-  color: #97380c;
+  color: white;
+  text-shadow: 2px 2px 0 black;
   font-size: 1.38em;
   font-weight: 400;
 }
@@ -395,8 +398,9 @@ input[type=submit].button {
   width: 100%;
   background-color: #97380c;
   height: 303px;
-  color: #97380c;
+  color: white;
   text-align: center;
+  margin-top: 20px;
 }
 .contact-hint-banner::before {
   content: "";
@@ -463,6 +467,15 @@ input[type=submit].button {
   line-height: 16px;
 }
 
+@media screen and (max-width: 768px) {
+  .contact-form {
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact-form__form {
+    width: 95%;
+  }
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -483,7 +496,7 @@ input[type=submit].button {
   justify-content: center;
 }
 .footer__social-links__link__icon {
-  margin: 0 35px;
+  margin: 0 5vw;
   color: white;
   opacity: 0.6;
   font-size: 30px;

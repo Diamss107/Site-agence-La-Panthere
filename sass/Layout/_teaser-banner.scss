@@ -25,11 +25,11 @@
 		padding: 40px;
 		text-align: center;
 		background-image: url(../../img/texture-paper.webp);
-		background-color: $primary-text-background;
+		background-color: rgba(black, 0.5);
 		background-size: 280px 280px;
 
 		&__title {
-			color: $primary;
+			color: lighten($primary, 35%);
 			font-weight: normal;
 			font-size: 1.38em;
 			line-height: 1.4em;

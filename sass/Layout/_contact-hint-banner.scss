@@ -2,8 +2,9 @@
 	@include banner(0, url(), url('../../img/texture-paper.webp'));
 	background-color: $primary;
 	height: 303px;
-	color: $primary;
+	color: white;
 	text-align: center;
+	margin-top: 20px;
 	&__text {
 		&__title {
 			font-weight: 400;

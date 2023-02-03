@@ -16,3 +16,14 @@
 		line-height: 16px;
 	}
 }
+
+@include for-tablet-and-mobile {
+	.contact-form {
+		flex-direction: column;
+		width: 100%;
+
+		&__form {
+			width: 95%;
+		}
+	}
+}
