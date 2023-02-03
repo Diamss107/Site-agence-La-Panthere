@@ -94,9 +94,15 @@
 
 			&__main {
 				display: flex;
+				position: relative;
 				align-items: center;
 				justify-content: space-between;
 				width: 95%;
+
+				&__img {
+					height: auto;
+					width: 75%;
+				}
 
 				&__left,
 				&__right {
@@ -118,6 +124,17 @@
 				font-size: 0.8em;
 				color: $secondary-text-color;
 				margin: 10px;
+			}
+		}
+	}
+}
+
+@include for-tablet-and-mobile {
+	.creation {
+		&__bigger {
+			&__wrapper {
+				height: auto;
+				width: 90%;
 			}
 		}
 	}
