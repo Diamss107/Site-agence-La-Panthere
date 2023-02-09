@@ -4,6 +4,16 @@ body {
   font-family: "helvetica";
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
 .button {
   padding: 12px 28px;
   background-color: #97380c;
@@ -178,8 +188,7 @@ input[type=submit].button {
   width: 95%;
 }
 .creation__bigger__wrapper__main__img {
-  height: auto;
-  width: 75%;
+  max-width: 75%;
 }
 .creation__bigger__wrapper__main__left, .creation__bigger__wrapper__main__right {
   color: white;
@@ -253,18 +262,23 @@ input[type=submit].button {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 
+.back-to-top {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .back-to-top {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    position: sticky;
+    margin-top: calc(100vh + 50px);
     border-radius: 5px;
     font-size: 1.3em;
-    position: fixed;
-    width: 40px;
-    height: 40px;
+    padding: 10px;
     bottom: 20px;
-    right: 20px;
+    left: 100vw;
+    margin-right: 20px;
     color: #575757;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 5;
@@ -471,13 +485,14 @@ input[type=submit].button {
   color: white;
   font-size: 0.7em;
   font-weight: 900;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 600px) {
   .teaser-banner__text {
     padding: 5%;
     width: 90%;
-    height: 70%;
+    height: 80%;
   }
 }
 .contact-banner {
@@ -641,4 +656,9 @@ input[type=submit].button {
 }
 .footer__social-links__link__icon:hover {
   opacity: 1;
+}
+
+.contact-page {
+  margin-bottom: -15px;
+  display: flex;
 }/*# sourceMappingURL=main.css.map */

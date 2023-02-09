@@ -4,16 +4,21 @@
 
 @include for-tablet-and-mobile {
 	.back-to-top {
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		$offset: 50px;
+
+		margin: 0;
+		padding: 0;
+
+		display: inline;
+		position: sticky;
+		margin-top: calc(100vh + $offset);
+
 		border-radius: 5px;
 		font-size: 1.3em;
-		position: fixed;
-		width: 40px;
-		height: 40px;
+		padding: 10px;
 		bottom: 20px;
-		right: 20px;
+		left: 100vw;
+		margin-right: 20px;
 		color: #575757;
 		background-color: rgba($color: #000000, $alpha: 0.3);
 		z-index: 5;
